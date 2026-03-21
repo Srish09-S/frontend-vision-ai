@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syncopate:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-syncopate: "Syncopate", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  /* Updated Palette */
+  --color-brand: #7c3aed;    /* Purple */
+  --color-action: #22d3ee;   /* Cyan-Blue */
+  --color-cta: #facc15;      /* Yellow */
+  --color-bg: #0a0a0f;       /* Deep Navy/Black */
+}
+
+body {
+  background-color: var(--color-bg) !important;
+  color: #e5e7eb;
+  margin: 0;
+  font-family: var(--font-mono);
+  /* Added a subtle Purple/Blue glow to the background */
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(124, 58, 237, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(34, 211, 238, 0.08) 0%, transparent 40%);
+  min-height: 100vh;
+}
+
+.cyber-panel {
+  background-color: rgba(15, 15, 25, 0.7);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+/* Custom scrollbar for a premium look */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 10px;
+}
