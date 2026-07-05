@@ -1,5 +1,5 @@
 Project Name: Frontend.IQ — AI Website Analyzer
-🧠 Description
+🧠 Description 
 
 Frontend.IQ is an AI-powered web auditing tool that analyzes any website URL and provides intelligent insights on performance, UI/UX quality, and overall project maturity.
 
